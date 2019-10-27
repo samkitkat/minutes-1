@@ -12,13 +12,6 @@ body {
   padding: 0px;
   font-style: Andale Mono, monospace;
 }
-#logo {
-  display: block;
-  width:100%;
-  margin-top:40px;
-  max-width: 100%;
-  margin-left: 500px;
-}
 
 nav ul {
   margin-left: 100px;
@@ -64,11 +57,28 @@ hr {
 
 #leaves {
   float:left;
+  position: relative;
+  width: 33.33%;
 }
 
 #leaf2 {
+  float:left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.33%;
+}
+
+#leaf3 {
   float:right;
-  margin-right: 95px;
+  position: relative;
+  width: 33.33%;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.33%;
 }
 
 #aboutus {
@@ -92,7 +102,7 @@ hr {
 }
 #login {
   float:right;
-  margin-top:20px;
+  margin-top:40px;
   margin-right:50px;
   font-family:futura;
   border-style: dotted;
@@ -104,8 +114,8 @@ hr {
   display: none;
 }
 
-@media only screen and (max-width:1300px) {
-  /* For mobile phones: */
+/*@media only screen and (max-width:1300px) {
+  /* For mobile phones:
   body {
     margin-right: auto;
     margin-left: auto;
@@ -186,3 +196,5 @@ hr {
   #about {
     max-width: 500px;
   }
+
+  */
