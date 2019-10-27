@@ -1,0 +1,188 @@
+body {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding:0px;
+  overflow-x: hidden;
+}
+#header {
+  background-color: #d1dfe3;
+  width: auto;
+  height: auto;
+  padding: 0px;
+  font-style: Andale Mono, monospace;
+}
+#logo {
+  display: block;
+  width:100%;
+  margin-top:40px;
+  max-width: 100%;
+  margin-left: 500px;
+}
+
+nav ul {
+  margin-left: 100px;
+  font-family: futura;
+  font-size: 10px;
+  color: #00000
+}
+nav ul li {
+  margin-right: 15%;
+  display: inline;
+}
+
+a {
+  color:#4f3f29;
+  font-size: 15px;
+}
+
+#blank1 {
+  padding: 50px;
+}
+#blank2 {
+  padding: 0px;
+}
+#blank3 {
+  padding: 50px;
+}
+
+#blank4 {
+  padding: 50px;
+}
+
+hr {
+  border: 0;
+  display:block;
+  width: 100%;
+  background-color:#4f3f29;
+  height: 1px;
+}
+
+#about {
+  background-color: #ffffff;
+}
+
+#leaves {
+  float:left;
+}
+
+#leaf2 {
+  float:right;
+  margin-right: 95px;
+}
+
+#aboutus {
+  font-family: Arial Narrow;
+  color:#524d46;
+  font-size: 50px;
+  margin-left: 270px;
+  margin-top: 100px;
+}
+#aboutpar{
+  font-family:futura;
+  font-size: 15px;
+  color:#524d46;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#footer {
+  background-color: #d1dfe3;
+  width: auto;
+  height: 100px;
+}
+#login {
+  float:right;
+  margin-top:20px;
+  margin-right:50px;
+  font-family:futura;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: #524d46;
+  padding: 8px 10px;
+}
+.dropdown {
+  display: none;
+}
+
+@media only screen and (max-width:1300px) {
+  /* For mobile phones: */
+  body {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+    overflow-x: hidden;
+  }
+  #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    margin-top:40px;
+  }
+
+  .links {
+  display: none;
+  }
+  .dropbtn {
+
+    position: fixed;
+    color: #524d46;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Courier New, Courier, monospace;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: fixed;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-family: Courier New, Courier, monospace;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    background-color: #ffffff;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+  .dropdown:hover .dropdown-content {
+    position: relative;
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    color: #524d46;
+  }
+  #leaf2 {
+    display: none;
+  }
+  #leaves {
+    display:none;
+  }
+  #login {
+    float: right;
+  }
+  #aboutus {
+    font-family: Arial Narrow;
+    color:#524d46;
+    font-size: 50px;
+    float: right;
+
+  }
+  #about {
+    max-width: 500px;
+  }

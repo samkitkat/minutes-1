@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <meta charset="UTF-8">
+    <head>
+        <title>Journal Page</title>
+        <link type="text/css" rel="stylesheet" href="journaling.css">
+       <!-- <link rel="stylesheet" href="style.css"> -->
+    </head>
+
+    <body>
+      <div id="header" align = "center">
+        <div id="blank1"></div>
+        <div class="dropdown">
+          <button class="dropbtn">menu</button>
+          <div class="dropdown-content">
+            <a href="\">HOME</a>
+            <a href="minutes/journaling.html">JOURNAL</a>
+            <a href="\">VIRTUAL BOT</a>
+            <a href="\">RESOURCES</a>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <nav>
+            <ul class="links">
+              <li><a style="text-decoration:none" href="\">HOME</a></li>
+              <li><a style="text-decoration:none" href="\">JOURNAL</a></li>
+              <li><a style="text-decoration:none" href="\">VIRTUAL BOT</a></li>
+              <li><a style="text-decoration:none" href="\">RESOURCES</a></li>
+            </ul>
+          </nav>
+          <div id="line">
+            <hr />
+          </div>
+          <div id="blank2"></div>
+          <img src="Journal.png" alt="logo" width="200px" height="200px">
+          <div id="blank2"></div>
+        </div>
+        <div id="journal" align = "center">
+
+            <form action= "/insertEntry" method = "POST">
+              <div id="blank2"></div>
+                <p> NEW JOURNAL ENTRY </p>
+                <textarea id = "myTextArea"
+                    name = "entry"
+                    rows = "14"
+                    cols = "80"
+                    placeholder = "Write your thoughts here. It can be about whatever is on your mind, or something that might be bothering you in the moment..."></textarea>
+                <br>
+                <input type = "submit" value = "SUBMIT ENTRY">
+                <br>
+                <a id="history" href="/getData"> HISTORY </a>
+
+                <br> <br> <br>
+
+                <button onclick= "goBack()">Return to Main</button>
+                <script>
+                    function goBack() {
+                        window.history.back();
+                    }
+                </script>
+
+
+            </form>
+
+
+
+
+
+
+
+
+        </div>
+        <div id="footer">
+
+        </div>
+    </body>
+
+
+</html>
